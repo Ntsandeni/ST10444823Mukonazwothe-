@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9DAAF3"
+    tools:context=".SecondActivity" >
+
+    <TextView
+        android:id="@+id/txtHappy"
+        android:layout_width="129dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:text="Happy"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFull"
+        app:layout_constraintEnd_toStartOf="@+id/pbHappy"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnHappy"
+        android:layout_width="114dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Play"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHappy"
+        app:layout_constraintEnd_toStartOf="@+id/btnFull"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFull"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="33dp"
+        android:text="Feed"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pbHappy"
+        app:layout_constraintEnd_toStartOf="@+id/btnClean" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="114dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="30dp"
+        android:text="Clean"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pbHappy"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFull"
+        android:layout_width="129dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="22dp"
+        android:text="Full"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtClean"
+        app:layout_constraintEnd_toStartOf="@+id/pbFull"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtClean"
+        android:layout_width="129dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="21dp"
+        android:text="Clean"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pbClean"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbHappy"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="241dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="44dp"
+        android:progressTint="#F4FF81"
+        app:layout_constraintBottom_toTopOf="@+id/pbFull"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbFull"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="241dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:progressTint="#FFFF8D"
+        app:layout_constraintBottom_toTopOf="@+id/pbClean"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbClean"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="241dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="33dp"
+        android:progressTint="#FFFF8D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageHome"
+        android:layout_width="322dp"
+        android:layout_height="333dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHappy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home123" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
